@@ -1,0 +1,21 @@
+___ftneg: CODE, 2597 0 10
+___awdiv: CODE, 2834 0 114
+_string: CODE, 3 0 33
+_delay: CODE, 3372 0 19
+_temperature: CODE, 1008 0 1040
+___ftpack: CODE, 2948 0 124
+___awmod: CODE, 2631 0 98
+_main: CODE, 3202 0 125
+___ftadd: CODE, 303 0 332
+_adc: CODE, 3903 0 193
+_data: CODE, 2607 0 12
+_tmr: CODE, 635 0 373
+_pulse: CODE, 3327 0 25
+___ftmul: CODE, 83 0 220
+___awtoft: CODE, 36 0 47
+_lift: CODE, 3535 0 181
+_command: CODE, 2619 0 12
+___fttol: CODE, 3400 0 135
+_count: CODE, 2729 0 105
+___ftdiv: CODE, 3716 0 187
+Total: 3385

@@ -1,0 +1,10 @@
+#include <pic.h>
+
+void main()
+{
+TRISB=0X00; PORTB=0X00; ANSEL=0;
+TRISD=0X00; PORTD=0X00; ANSELH=0;
+TRISC=0X00; PORTC=0X00;
+
+RD0=1;
+}

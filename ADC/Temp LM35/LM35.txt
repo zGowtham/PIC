@@ -1,0 +1,131 @@
+#include<pic.h>
+#include<stdio.h>
+
+#define RS RE0
+#define EN RE1
+#define LCD PORTD
+#define _XTAL_FREQ 4000000
+
+#define LED1 RA4
+#define LED2 RA5
+
+void string(char *ptr);
+
+int DV=0, high, low;
+int a,b,c,d,voltage,temp;
+
+void delay(int x)
+{
+while(x--);
+}
+
+
+void pulse()
+{
+EN=1;
+delay(1000);
+EN=0;
+delay(1000);
+}
+
+void command(char data)
+{
+RS=0;
+LCD=data;
+pulse();
+}
+
+void data(char data)
+{
+RS=1;
+LCD=data;
+pulse();
+}
+
+void string(char *ptr)
+{
+while(*ptr)
+{
+data(*ptr);
+*ptr++;
+}
+}
+
+
+void main()
+{
+TRISA=0X0F;	PORTA=0X00;
+TRISD=0X00;	PORTD=0X00;
+TRISE=0X00; PORTE=0X00;
+
+ANSEL=0X01; ANSELH=0X00; // because I am selecting AN0 = 1
+ADCON0=0X83; ADCON1=0XB0;
+while(ADCON0 & 0X02);
+
+command(0X38);
+command(0X0C);
+
+while(1)
+{
+
+DV=ADRESL+(256*ADRESH);
+
+if(DV>=0&&DV<=275)
+{
+temp=(int)(DV*0.2);
+voltage=55-temp;
+
+a=voltage/1000;
+b=((voltage%1000)/100);
+c=(((voltage%1000)%100)/10);
+d=(((voltage%1000)%100)%10);
+
+command(0X80);
+
+data(a+48);
+data(b+48);
+data(c+48);
+data(d+48);
+data('C');
+}
+
+if(DV>280)
+{
+temp=(int)(DV*0.2005347594);
+voltage=temp-55;
+
+a=voltage/1000;
+b=((voltage%1000)/100);
+c=(((voltage%1000)%100)/10);
+d=(((voltage%1000)%100)%10);
+
+command(0X80);
+
+data(a+48);
+data(b+48);
+data(c+48);
+data(d+48);
+data(0XDF);
+data('C');
+}
+
+
+/*a=DV/1000;
+b=((DV%1000)/100);
+c=(((voltage%1000)%100)/10);
+d=(((voltage%1000)%100)%10);
+
+command(0XC5);
+data(a+48);
+data(b+48);
+data(c+48);
+data(d+48);
+data(0XDF);
+data('C');
+*/
+
+}
+
+}
+
+

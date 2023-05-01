@@ -1,0 +1,9 @@
+___awdiv: CODE, 1346 0 112
+___aldiv: CODE, 1458 0 162
+_delay: CODE, 1208 0 17
+___awmod: CODE, 1250 0 96
+_main: CODE, 1620 0 428
+_data: CODE, 1196 0 12
+_pulse: CODE, 1225 0 25
+_command: CODE, 1184 0 12
+Total: 864

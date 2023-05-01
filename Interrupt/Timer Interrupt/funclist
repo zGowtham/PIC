@@ -1,0 +1,13 @@
+___awdiv: CODE, 329 0 114
+_delay: CODE, 792 0 17
+i1_pulse: CODE, 723 0 25
+_com: CODE, 821 0 12
+___awmod: CODE, 543 0 98
+_main: CODE, 443 0 100
+_intr: CODE, 21 0 308
+_timer: CODE, 641 0 82
+_data: CODE, 833 0 12
+_pulse: CODE, 748 0 25
+i1_delay: CODE, 773 0 19
+_command: CODE, 809 0 12
+Total: 824

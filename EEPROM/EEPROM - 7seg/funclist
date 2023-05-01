@@ -1,0 +1,4 @@
+_main: CODE, 1876 0 172
+_eeprom_read: CODE, 1797 0 34
+_eeprom_write: CODE, 1831 0 45
+Total: 251

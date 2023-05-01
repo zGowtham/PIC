@@ -1,0 +1,9 @@
+#include <pic.h>
+
+void main()
+{
+	TRISA = 0x00;
+	ANSEL = 0x00;
+	ANSELH = 0x00;
+	RA1=1;
+}

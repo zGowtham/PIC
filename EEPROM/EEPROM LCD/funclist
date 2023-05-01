@@ -1,0 +1,10 @@
+___awdiv: CODE, 1345 0 114
+_delay: CODE, 1104 0 7
+___awmod: CODE, 1253 0 92
+_main: CODE, 1459 0 589
+_data: CODE, 1111 0 12
+_pulse: CODE, 1153 0 25
+_command: CODE, 1123 0 12
+_eeprom_read: CODE, 1178 0 30
+_eeprom_write: CODE, 1208 0 45
+Total: 926

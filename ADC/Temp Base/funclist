@@ -1,0 +1,19 @@
+___ftneg: CODE, 4 0 10
+___awdiv: CODE, 3326 0 114
+_delay: CODE, 3027 0 17
+_temperature: CODE, 1008 0 1040
+___ftpack: CODE, 3440 0 124
+___awmod: CODE, 3116 0 98
+_main: CODE, 3214 0 112
+___ftadd: CODE, 676 0 332
+_adc: CODE, 201 0 233
+_data: CODE, 2989 0 12
+_pulse: CODE, 3044 0 25
+___ftmul: CODE, 3876 0 220
+___awtoft: CODE, 3069 0 47
+_command: CODE, 3001 0 12
+___fttol: CODE, 3564 0 135
+_voltage: CODE, 434 0 242
+_count: CODE, 3699 0 177
+___ftdiv: CODE, 14 0 187
+Total: 3137

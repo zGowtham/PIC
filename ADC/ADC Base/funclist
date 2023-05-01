@@ -1,0 +1,16 @@
+___awdiv: CODE, 710 0 114
+_delay: CODE, 416 0 17
+___ftpack: CODE, 824 0 124
+___awmod: CODE, 505 0 98
+_main: CODE, 603 0 107
+_adc: CODE, 1083 0 139
+_data: CODE, 404 0 12
+_pulse: CODE, 433 0 25
+___ftmul: CODE, 1586 0 220
+___awtoft: CODE, 458 0 47
+_command: CODE, 392 0 12
+___fttol: CODE, 948 0 135
+_voltage: CODE, 1806 0 242
+_count: CODE, 1222 0 177
+___ftdiv: CODE, 1399 0 187
+Total: 1656
